@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc74460eb360754a9010c3e1ceada7c, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: Caballero de fuego
+    characterSprite: {fileID: 21300000, guid: e4f913f8ebc4bfc4ca6fc796ad2ad161, type: 3}
+    personaje: {fileID: -2253911629886400664, guid: df504b41ce85a1a4cb0dd1a4c730f861, type: 3}
+  - characterName: Sacerdotisa del agua
+    characterSprite: {fileID: 21300000, guid: 68c7a92fac0ed904b90f12a649479900, type: 3}
+    personaje: {fileID: 0}
+  - characterName: Asesino del viento
+    characterSprite: {fileID: 21300000, guid: 131b57cb28149954c9a66585ef54811f, type: 3}
+    personaje: {fileID: 0}
+  - characterName: Monje de la tierra
+    characterSprite: {fileID: 21300000, guid: 96724d0d64616f44e86e17c87d7a2859, type: 3}
+    personaje: {fileID: 0}
