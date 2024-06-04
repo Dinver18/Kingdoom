@@ -4,43 +4,52 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
-
     [SerializeField] private Animator animator;
-    [SerializeField] private PlayerController contralador;
+    private float attackCooldown = 2f; // Tiempo de espera entre ataques
+    private float lastAttackTime =0f;
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
+        float tiempo = Time.time;
+        Debug.Log(tiempo-lastAttackTime);
+
+            if (tiempo - lastAttackTime >= attackCooldown)
+            {
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    Debug.Log("Se realizó un ataque con el trigger: Q");
+
+                    StartAttack("atk_1");
+                }
+
+                if (Input.GetKeyDown(KeyCode.W))
+                {
+                    Debug.Log("Se realizó un ataque con el trigger: W");
+
+                    StartAttack("atk_2");
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Debug.Log("Se realizó un ataque con el trigger: E");
+
+                    StartAttack("atk_3");
+                }
+
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    Debug.Log("Se realizó un ataque con el trigger: R");
+
+                    StartAttack("atk_sp");
+                }
+            }
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Attack("atk_1");
-        }
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Attack("atk_2");
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Attack("atk_3");
-        }
-
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            Attack("atk_sp");
-        }
-
-    }
-
-    void Attack(string trigger)
+    void StartAttack(string trigger)
     {
         animator.SetTrigger(trigger);
+        lastAttackTime = Time.time;
     }
+
 }
