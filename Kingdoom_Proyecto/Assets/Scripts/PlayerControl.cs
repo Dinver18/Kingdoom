@@ -3,26 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirection))]
+[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirection),typeof(Damageable))]
 
 public class PlayerControl : MonoBehaviour
 {
-    public float runSpeed = 8f;
+    public float runSpeed = 10f;
+    Vector2 moveInput;
     TouchingDirection touchingDirection;
+    Damageable damageable;
 
     public float CurrentMoveSpeed
     {
         get
         {
-            if (IsRunning)
+            if (CanMove)
             {
-                return runSpeed;
+                if (IsRunning && !touchingDirection.IsOnWall)
+                {
+                    return runSpeed;
+                }
+                else
+                {
+                    return 0;
+                }
             }
-            return 0;
+            else
+            {
+                return 0;
+            }
         }
     }
-
-    Vector2 moveInput;
 
     [SerializeField]
     private bool _isRunning = false;
@@ -40,6 +50,8 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    public bool _isFacingRight = true;
+
     public bool IsFacingRight
     {
         get { return _isFacingRight; }
@@ -56,9 +68,16 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    public float JumImpulse = 10f;
+    
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationString.canMove);
+        }
+    }
 
-    public bool _isFacingRight = true;
+    
 
     Rigidbody2D rb;
     Animator animator;
@@ -68,43 +87,32 @@ public class PlayerControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirection = GetComponent<TouchingDirection>();
+        damageable = GetComponent<Damageable>();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
+        if(!damageable.LockVelocity)
+            rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
 
         animator.SetFloat(AnimationString.yVelocity, rb.velocity.y);
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+
+    public void OnRun(InputAction.CallbackContext context)
     {
-
-        moveInput = context.ReadValue<Vector2>();
-
-        // Verifica si las teclas de arriba o abajo están presionadas
-        if (moveInput.y != 0)
+        if (context.started)
         {
-            // No hagas nada si se presionan las teclas de arriba o abajo
-            return;
+            moveInput = context.ReadValue<Vector2>();
+            IsRunning = moveInput != Vector2.zero;
+            SetFacingDirection(moveInput);
+            IsRunning = true;
+        }else if (context.canceled)
+        {
+            IsRunning = false;
         }
-
-        IsRunning = moveInput != Vector2.zero;
-
-        SetFacingDirection(moveInput);
-
     }
 
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        // Check if alive as well
-        if (context.started && touchingDirection.IsGrounded)
-        {
-            animator.SetTrigger(AnimationString.jump);
-            rb.velocity = new Vector2(rb.velocity.x, JumImpulse);
-        }
-      
-    }
 
     private void SetFacingDirection(Vector2 moveInput)
     {
@@ -118,5 +126,10 @@ public class PlayerControl : MonoBehaviour
             //Face the left
             IsFacingRight = false;
         }
+    }
+
+    public void OnHit(int damage, Vector2 knockback)
+    {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 }

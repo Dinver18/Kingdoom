@@ -11,34 +11,34 @@ public class AttackController : MonoBehaviour
     void Update()
     {
         float tiempo = Time.time;
-        Debug.Log(tiempo-lastAttackTime);
+        //Debug.Log(tiempo-lastAttackTime);
 
             if (tiempo - lastAttackTime >= attackCooldown)
             {
                 if (Input.GetKeyDown(KeyCode.Q))
                 {
-                    Debug.Log("Se realizó un ataque con el trigger: Q");
+                    //Debug.Log("Se realizó un ataque con el trigger: Q");
 
                     StartAttack("atk_1");
                 }
 
                 if (Input.GetKeyDown(KeyCode.W))
                 {
-                    Debug.Log("Se realizó un ataque con el trigger: W");
+                    //Debug.Log("Se realizó un ataque con el trigger: W");
 
                     StartAttack("atk_2");
                 }
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.Log("Se realizó un ataque con el trigger: E");
+                   // Debug.Log("Se realizó un ataque con el trigger: E");
 
                     StartAttack("atk_3");
                 }
 
                 if (Input.GetKeyDown(KeyCode.R))
                 {
-                    Debug.Log("Se realizó un ataque con el trigger: R");
+                    //Debug.Log("Se realizó un ataque con el trigger: R");
 
                     StartAttack("atk_sp");
                 }
