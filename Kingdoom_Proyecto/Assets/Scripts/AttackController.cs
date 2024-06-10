@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackController : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-    private float attackCooldown = 2f; // Tiempo de espera entre ataques
+    private float attackCooldown = 0.8f; // Tiempo de espera entre ataques
     private float lastAttackTime =0f;
 
     void Update()
