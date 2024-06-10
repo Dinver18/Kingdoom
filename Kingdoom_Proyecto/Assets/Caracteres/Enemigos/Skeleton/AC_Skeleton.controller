@@ -156,13 +156,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b58c920e9397d4fb258f83b2ee263f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatName: attackCooldow
+  floatName: attackCooldown
   updateOnStateEnter: 0
   updateOnStateExit: 1
   updateStateMachineEnter: 0
   updateStateMachineExit: 0
   valueOnEnter: 0
-  valueOnExit: 1
+  valueOnExit: 0.6
 --- !u!114 &-5136618054939720504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -392,6 +392,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: attackCooldown
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -498,7 +504,7 @@ AnimatorStateMachine:
   - {fileID: -2011976206947333303}
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 720, y: 110, z: 0}
+  m_ExitPosition: {x: 700, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 350, y: 10, z: 0}
   m_DefaultState: {fileID: 2045967474337547342}
 --- !u!1107 &6483188688668844949
@@ -512,7 +518,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1284320590966499355}
-    m_Position: {x: 380, y: 110, z: 0}
+    m_Position: {x: 380, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
