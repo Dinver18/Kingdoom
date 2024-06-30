@@ -1,93 +1,17 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 using UnityEngine;
-
-public class KnightController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    private float horizontal;
-    //[SerializeField] private float speed = 10f;
-    [SerializeField] public float jumpPower = 5f;
-    [SerializeField]  private bool isFacingRight = true;
-    bool isGround = true;
 
-    private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
-    private Animator animator;
+    public float speed = 5f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-        //animator.SetFloat("yVelocity", rb.velocity.y);
-
-        //horizontal = Input.GetAxisRaw("Horizontal");
-
-        if(Input.GetButtonDown("Jump") && IsGround())
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            isGround = false;
-            animator.SetBool("IsJumping", !isGround);
-        }
-
-        if(Input.GetKeyDown(KeyCode.DownArrow) && IsGround())
-        {
-            animator.SetTrigger("Roll");
-        }
-
-        Flip();
-
-    }
-
-    private void FixedUpdate()
-    {
-        GroundCheck();
-        //rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        //animator.SetFloat("Speed",Math.Abs(rb.velocity.x));
-    }
-
-    void GroundCheck()
-    {
-        isGround = false;
-
-        if (IsGround())
-        {
-            isGround = true;
-        }
-
-        animator.SetBool("IsJumping", !isGround);
-        animator.SetBool(AnimationString.isGrounded, isGround);
-
-    }
-
-    private bool IsGround()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
-
-    private void Flip()
-    {
-        if(isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        isGround = true;
-        animator.SetBool("IsJumping", !isGround);
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        transform.position += movement * speed * Time.deltaTime;
     }
 }
