@@ -19,8 +19,13 @@ MonoBehaviour:
     width: 1706.6667
     height: 869.3334
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Game
   m_RootView: {fileID: 2}
+=======
+  m_Title: Tile Palette
+  m_RootView: {fileID: 3}
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -32,6 +37,35 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 244.66667
+    y: 0
+    width: 168.66667
+    height: 497.33334
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -44,8 +78,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1706.6667
     height: 869.3334
+=======
+    width: 1706.6666
+    height: 869.3333
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +108,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1706.6667
+=======
+    width: 1706.6666
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +133,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 849.3334
     width: 1706.6667
+=======
+    y: 849.3333
+    width: 1706.6666
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,6 +162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1706.6667
     height: 819.3334
   m_MinSize: {x: 300, y: 100}
@@ -145,6 +194,14 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
   controlID: 66
+=======
+    width: 1706.6666
+    height: 819.3333
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 32384, y: 16192}
+  vertical: 0
+  controlID: 68
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,18 +216,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
+<<<<<<< HEAD
+=======
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1185.3334
+    height: 819.3333
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 69
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1185.3334
+<<<<<<< HEAD
     height: 498
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 55
 --- !u!114 &8
+=======
+    height: 497.33334
+  m_MinSize: {x: 300, y: 50}
+  m_MaxSize: {x: 24288, y: 8096}
+  vertical: 0
+  controlID: 70
+--- !u!114 &9
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,8 +280,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 227.33333
     height: 498
+=======
+    width: 244.66667
+    height: 497.33334
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -211,10 +309,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 227.33333
     y: 0
     width: 958.00006
     height: 498
+=======
+    x: 413.33334
+    y: 0
+    width: 772
+    height: 497.33334
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -261,11 +366,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: InspectorWindow
+=======
+  m_Name: ProjectBrowser
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1185.3334
     y: 0
     width: 521.3334
@@ -273,12 +383,26 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
+=======
+    x: 0
+    y: 497.33334
+    width: 1185.3334
+    height: 321.99997
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_Panes:
   - {fileID: 12}
   - {fileID: 19}
+<<<<<<< HEAD
   - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 1
+=======
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,6 +411,36 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GridPaintPaletteWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1185.3334
+    y: 0
+    width: 521.33325
+    height: 819.3333
+  m_MinSize: {x: 241, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  - {fileID: 21}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -299,10 +453,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1185.3334
     y: 72.66667
     width: 520.3334
     height: 798.3334
+=======
+    x: 244.66667
+    y: 72.66667
+    width: 166.66667
+    height: 476.33334
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -348,8 +509,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 72.66667
+<<<<<<< HEAD
     width: 226.33333
     height: 477
+=======
+    width: 243.66667
+    height: 476.33334
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -363,9 +529,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 2e740000
       m_LastClickedID: 0
       m_ExpandedIDs: f8fafffffafaffff7c710000ee710000
+=======
+      m_SelectedIDs: 3cf4ffff
+      m_LastClickedID: -3012
+      m_ExpandedIDs: fafaffffd6710000
+>>>>>>> parent of 26a5956 (barra de vida jugador)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: GroundedCheck
@@ -409,10 +581,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 227.33334
     y: 72.66667
     width: 956.00006
     height: 477
+=======
+    x: 413.33334
+    y: 72.66667
+    width: 770
+    height: 476.33334
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -771,9 +950,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0.061, y: -5.1189, z: 0.03566202}
     speed: 2
     m_Value: {x: 0.061, y: -5.1189, z: 0.03566202}
+=======
+    m_Target: {x: 28.176065, y: 2.5144453, z: 0.6470382}
+    speed: 2
+    m_Value: {x: 27.409378, y: 2.323947, z: 0.65155923}
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -823,9 +1008,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: 10.49872
+    speed: 2
+    m_Value: 10.046622
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -926,16 +1117,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 956.00006
       height: 456
     m_Scale: {x: 0.6333333, y: 0.6333333}
     m_Translation: {x: 478.00003, y: 228}
+=======
+      width: 770
+      height: 455.33334
+    m_Scale: {x: 0.6015625, y: 0.6015625}
+    m_Translation: {x: 385, y: 227.66667}
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -754.7369
       y: -360
       width: 1509.4738
@@ -943,6 +1142,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.6333333
   m_LastWindowPixelSize: {x: 1434.0001, y: 715.5}
+=======
+      x: -640
+      y: -378.4589
+      width: 1280
+      height: 756.9178
+    m_MinimalGUI: 1
+  m_defaultScale: 0.6015625
+  m_LastWindowPixelSize: {x: 1155, y: 714.5}
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1003,9 +1211,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 570.6667
     width: 1184.3334
     height: 300.33337
+=======
+    y: 570
+    width: 1184.3334
+    height: 300.99997
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1027,7 +1241,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Caracteres/personaje con espada
+=======
+    - Assets/Scripts
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1035,16 +1253,28 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Caracteres/personaje con espada
   m_LastFoldersGridSize: 96
+=======
+  - Assets/Scripts
+  m_LastFoldersGridSize: -1
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_LastProjectPath: C:\Users\butis\Desktop\Kingdoom\Kingdoom_Proyecto
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 167.66663}
     m_SelectedIDs: 807e0000
     m_LastClickedID: 32384
     m_ExpandedIDs: 0000000024770000667e00006a7e00006c7e00006e7e0000747e0000867e000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 27.00003}
+    m_SelectedIDs: 087e0000
+    m_LastClickedID: 32264
+    m_ExpandedIDs: 00000000e2760000067e000000ca9a3b
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Agua
@@ -1072,7 +1302,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000024770000
+=======
+    m_ExpandedIDs: 00000000e2760000
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1099,8 +1333,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003e610000c46500006c610000ce7d0000746b0000ca6800009a6e0000be660000e4b20000b29f0000e2670000da6d000082630000886600006a790000e8790000dc6b0000f46b0000f06b0000166900002a6d00004c6c000006700000dc7e0000e07e0000a673000092730000aa7e00002e740000aadb0000
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c62300003e610000c46500006c610000ce7d0000746b0000ca6800009a6e0000be660000e4b20000b29f0000e2670000da6d000082630000886600006a790000e8790000dc6b0000f46b0000f06b0000166900002a6d00004c6c000006700000
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1149,9 +1388,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 570.6667
     width: 1184.3334
     height: 300.3333
+=======
+    y: 570
+    width: 1184.3334
+    height: 300.99997
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1271,14 +1516,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.45477122
+    - e00: 0.61726314
       e01: 0
       e02: 0
-      e03: -17.433125
+      e03: 903.9497
       e10: 0
-      e11: 0.45477122
+      e11: 0.61726314
       e12: 0
-      e13: -31.379654
+      e13: 635.8936
       e20: 0
       e21: 0
       e22: 1
@@ -1421,4 +1666,8 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 29166
+=======
+  m_LastSelectedObjectID: 37122
+>>>>>>> parent of 26a5956 (barra de vida jugador)
