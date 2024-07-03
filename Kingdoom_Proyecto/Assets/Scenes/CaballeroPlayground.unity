@@ -7423,7 +7423,11 @@ Tilemap:
     e32: 0
     e33: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1268575102
+=======
+--- !u!1001 &1309654648
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 =======
 --- !u!1001 &1309654648
 >>>>>>> parent of 26a5956 (barra de vida jugador)
@@ -7434,6 +7438,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 3021413410955827002, guid: 405927734afa17a41b3deccff052673e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7479,6 +7484,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy1 (2)
 =======
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
     - target: {fileID: 1317385237656905269, guid: a85a186db187123448361feace24ce53, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -7589,6 +7596,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 405927734afa17a41b3deccff052673e, type: 3}
 --- !u!224 &1389907904 stripped
 RectTransform:
@@ -7596,6 +7604,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 1516065477320286197}
   m_PrefabAsset: {fileID: 0}
 =======
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   m_SourcePrefab: {fileID: 100100000, guid: a85a186db187123448361feace24ce53, type: 3}
 --- !u!4 &1406787724 stripped
 Transform:
@@ -15376,12 +15386,15 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -17, y: -11, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 29
       m_TileSpriteIndex: 29
 =======
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   - first: {x: -6, y: -12, z: 0}
     second:
       serializedVersion: 2
@@ -15407,6 +15420,9 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 29
       m_TileSpriteIndex: 31
+<<<<<<< HEAD
+>>>>>>> parent of 26a5956 (barra de vida jugador)
+=======
 >>>>>>> parent of 26a5956 (barra de vida jugador)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -15514,17 +15530,23 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -17, y: -10, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 29
       m_TileSpriteIndex: 29
 =======
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   - first: {x: -5, y: -11, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 25
       m_TileSpriteIndex: 30
+<<<<<<< HEAD
+>>>>>>> parent of 26a5956 (barra de vida jugador)
+=======
 >>>>>>> parent of 26a5956 (barra de vida jugador)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -15632,12 +15654,15 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: -17, y: -9, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 29
       m_TileSpriteIndex: 29
 =======
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   - first: {x: -6, y: -10, z: 0}
     second:
       serializedVersion: 2
@@ -15663,6 +15688,9 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 26
       m_TileSpriteIndex: 26
+<<<<<<< HEAD
+>>>>>>> parent of 26a5956 (barra de vida jugador)
+=======
 >>>>>>> parent of 26a5956 (barra de vida jugador)
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -18778,6 +18806,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
@@ -18793,6 +18822,8 @@ Tilemap:
   - m_RefCount: 127
     m_Data: {fileID: 11400000, guid: 7e5e58fd499d57d409f45473b9ebaab6, type: 2}
 =======
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 052aac62de4de99439bf153b8c36ef0b, type: 2}
   - m_RefCount: 1
@@ -18807,6 +18838,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 186cefc6ec6e0f44b9399a848ebd05cd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 0d1d063eedd2fc647a653463e4f50715, type: 2}
+<<<<<<< HEAD
+>>>>>>> parent of 26a5956 (barra de vida jugador)
+=======
 >>>>>>> parent of 26a5956 (barra de vida jugador)
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9b70e6fd805f2494f8d9952763e0874a, type: 2}
@@ -18984,6 +19018,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
@@ -18998,6 +19033,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 127
     m_Data: {fileID: 682490260, guid: 09a1a773605fd4f468160aa971d8d7fc, type: 3}
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 =======
 >>>>>>> parent of 26a5956 (barra de vida jugador)
   - m_RefCount: 1
@@ -19144,7 +19181,11 @@ Tilemap:
     m_Data: {fileID: 1826024330, guid: 09a1a773605fd4f468160aa971d8d7fc, type: 3}
   m_TileMatrixArray:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 430
+=======
+  - m_RefCount: 310
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 =======
   - m_RefCount: 310
 >>>>>>> parent of 26a5956 (barra de vida jugador)
@@ -19167,7 +19208,11 @@ Tilemap:
       e33: 1
   m_TileColorArray:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 430
+=======
+  - m_RefCount: 310
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 =======
   - m_RefCount: 310
 >>>>>>> parent of 26a5956 (barra de vida jugador)
@@ -19884,8 +19929,11 @@ SceneRoots:
   - {fileID: 265870953}
   - {fileID: 1440031308}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 949598138}
   - {fileID: 1268575102}
   - {fileID: 1997015642}
+=======
+>>>>>>> parent of 26a5956 (barra de vida jugador)
 =======
 >>>>>>> parent of 26a5956 (barra de vida jugador)
