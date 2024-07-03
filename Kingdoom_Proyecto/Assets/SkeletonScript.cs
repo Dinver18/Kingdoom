@@ -10,7 +10,6 @@ public class SkeletonScript : MonoBehaviour
     public float walkSpeed = 5f;
     public float walkStopRate = 0.05f;
     public DetectionZone attackZone;
-    public DetectionZone cliffDetectionZone;
 
     Rigidbody2D rb;
     TouchingDirection touchingDirection;
@@ -124,15 +123,6 @@ public class SkeletonScript : MonoBehaviour
     public void OnHit(int damage, Vector2 knockback)
     {
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
-    }
-
-    public void OnCliffDetected()
-    {
-        Debug.Log(touchingDirection.IsGrounded);
-        if (!touchingDirection.IsGrounded)
-        {
-            FlipDirection();
-        }
     }
 
 }
